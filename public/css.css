@@ -1,0 +1,64 @@
+@font-face {
+    font-family: 'Mindlist';
+    src: url(assets/gilroy/Gilroy-Bold.ttf);
+}
+@font-face {
+    font-family: 'biasa';
+    src: url(assets/nunito/Nunito-Regular.ttf);
+}
+
+nav {
+    height: 80px;
+}
+
+.nav-link{
+    margin-right: 25px;
+    color: white !important;
+    font-family: 'biasa';
+}
+
+.tombol{
+    border-radius: 40px;
+}
+
+.jumbotron{
+    background-image: url(assets/1.jpg);
+    background-size: cover;
+    height: 483px;
+    background-position: center;
+    text-align: center;
+    color: #F0FDFA;
+    font-family: 'biasa';
+}
+
+
+
+.lead{
+    padding-top: 10px;
+    font-size: 16px;
+    padding-right: 100px;
+    padding-left: 100px;
+}
+
+.jumbcen{
+    color: #CBFCF1;
+    font-family: 'Mindlist';
+    font-size: 48px;
+}
+
+.workingspace{
+    margin-top: 80px;
+}
+
+/* dekstop */
+@media (min-width: 992px) {
+    .nav-link:hover::after{
+        content: '';
+        display: block;
+        border-bottom: 3px solid white;
+        width: 50%;
+        margin: auto;
+        padding-bottom: 3px;
+        margin-bottom: -6px;
+    }
+}
