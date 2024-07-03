@@ -20,8 +20,26 @@ class Pages extends BaseController
         $data = [
             'title'=> 'About'
         ];
-        echo view ('layout/header', $data);
-        echo view ('pages/about');
-        echo view ('layout/footer');
+        echo view ('pages/about', $data);
+    }
+
+    public function dashboard(){
+        $data = [
+            'title'=> 'Dashboard'
+        ];
+        echo view ('pages/dashboard', $data);
+    }
+
+    public function help(){
+        $data = [
+            'title'=> 'Help'
+        ];
+        echo view ('pages/help', $data);
+    }
+    public function manage(){
+        $data = [
+            'title'=> 'Menejemen'
+        ];
+        echo view ('pages/manage', $data);
     }
 }
